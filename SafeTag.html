@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeTag</title>
+
+  <style>
+    body {
+      font-family:sans-serif;
+      background-color: #f5f5f5;
+      background-image: url("img/background.png");
+      background-position: bottom, center;
+      background-repeat: no-repeat;
+      font-size: 120%;
+      text-align: center;
+      margin : 5%;
+    }
+
+    header {
+      background: #f5f5f5;
+      color : #f5f5f5;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #f2bdd6;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #222031;
+      padding: 12px;
+      text-decoration: none;
+      transition-property: background-color, color;
+      transition-duration: 0.3s;
+    }
+
+    nav a:hover {
+      color: #f2bdd6;
+      background-color: #222031;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    section {
+      color: #222031;
+      margin : 0 25%;
+      text-align: justify;
+    }
+
+    .tags {
+    align-content: center;
+    width: 50%;
+    padding : 20px;
+    }
+
+    .card {
+      background: linear-gradient(110deg, #fbcbcb, 80%, #946a9b);
+      border: 1px solid #222031;
+      border-radius: 2%;
+      transition-property: transform;
+      transition-duration: 0.2s;
+      width: 500px; 
+      height: 350px;
+    }
+
+      .card:hover {
+      transform: translateY(-5px);
+      }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      max-width: 900px;
+      justify-content: center;
+      margin: 50px;
+    }
+
+      .texte {
+    display : flex;
+    flex-direction: column;
+    background: linear-gradient(110deg, #fbcbcb, 80%, #946a9b);
+    border-radius : 34% 66% 35% 65% / 51% 50% 50% 49% ;
+    justify-content: center;
+    text-align: center;
+      }
+
+      .texte:hover {
+      background: linear-gradient(110deg, #fbcbcb, 70%, #F299C7);
+      }
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  display: block;
+  border-radius: 2%;
+}
+
+.contact {
+  background-color: #f2bdd6;
+  padding : 10px;
+  text-align: center;
+}
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img src="img/Header.png">
+  </header>
+
+  <nav>
+    <a href="#about">À propos</a>
+    <a href="#features">Fonctionnalités</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>Vous cherchez un psy ? Nous sommes passés par là.</h2>
+      <p>SafeTag vous propose un espace de recherche de praticiens de la santé mentale, incluant psychiatres, psychologues, et psychothérapeutes.</p>
+      <p>Notre plateforme remonte les données nationales de l’exercice des praticiens actuellement actifs.</p>
+      <p>Nous proposons de croiser ces données avec les avis de leurs patients, en les axant sur le sentiment de sécurité à l'égard des sujets communs de discrimination.
+    </p>
+  </section>
+    
+  <img class="tags" src="img/tags.png">
+
+  <section>
+  <p>
+  SafeTag est un projet de site internet de recherche et d’avis sur les professionnels de la santé mentale en France. 
+  <br>Nous vous offrons la possibilité, grâce aux avis d’utilisateurs, de pouvoir chercher un soignant selon sa localisation, ses honoraires, mais aussi selon les pathologies qu’al a déjà traité, les modalités d’accessibilité, mais aussi sur les différents retours au sujet des discriminations communément rencontrées pour les minorités. 
+  <br>SafeTag vous propose une nouvelle vision de la prise en charge de votre santé mentale, où votre bien-être est la seule et unique chose dont vous devriez avoir à vous occuper.
+    </p>
+  </section>
+
+  <section id="features">
+    <h2>Fonctionnalités</h2>
+
+    <div class="grid">
+
+        <div class="card">
+          <img src="img/Recherche.png">
+        </div>
+        <div class="texte">
+          <p><b>Recherchez un·e soignant·e</b> 
+          <br>par nom, métiers, pathologies, villes, tags...</p>
+        </div>
+
+
+
+        <div class="texte">
+          <p><b>Consultez</b> <br>les retours d'autres personnes.</p>
+        </div>
+        <div class="card">
+          <img src="img/avis.png">
+        </div>
+
+
+
+        <div class="card">
+          <img src="img/Mon profil.png">
+        </div>
+        <div class="texte">
+          <p><b>Donnez votre avis</b> <br>sur votre soignant·e en créant un compte anonyme.</p>
+        </div>
+
+    </div>
+
+  </section>
+
+  <div class="contact" id="contact">
+    <h2>Contact</h2>
+    <p>contact@safetag.org</p>
+  </div>
+
+  <footer>
+    <p>© SafeTag 2026</p>
+  </footer>
+
+</body>
+</html>
